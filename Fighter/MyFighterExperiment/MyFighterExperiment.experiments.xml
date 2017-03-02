@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Experiments>
+
+  <Experiment name="Fighter Experiment">
+    <AssemblyPath>MyFighterExperiment.dll</AssemblyPath>
+    <ClassName>MyFighterExperiment.FighterExperiment</ClassName>
+    <Config>
+      <PopulationSize>500</PopulationSize>
+      <SpecieCount>10</SpecieCount>
+      <Activation>
+        <Scheme>CyclicFixedIters</Scheme>
+        <Iters>3</Iters>
+      </Activation>
+      <ComplexityRegulationStrategy>Absolute</ComplexityRegulationStrategy>
+      <ComplexityThreshold>15</ComplexityThreshold>
+      <Description>
+        FightSimulation
+      </Description>
+    </Config>
+  </Experiment>
+</Experiments>
