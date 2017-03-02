@@ -40,7 +40,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Ability1.cs" />
+    <Compile Include="Abilities\Ability2.cs" />
+    <Compile Include="Abilities\Ability3.cs" />
+    <Compile Include="Abilities\AbilityState.cs" />
+    <Compile Include="Abilities\AbilityWithCooldown.cs" />
+    <Compile Include="Abilities\ComboAbility.cs" />
+    <Compile Include="Abilities\DamageBasedAbility.cs" />
+    <Compile Include="Abilities\DotAbility.cs" />
+    <Compile Include="ComboView.cs" />
+    <Compile Include="ComboView.Designer.cs">
+      <DependentUpon>ComboView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Damage.cs" />
+    <Compile Include="DamageType.cs" />
+    <Compile Include="DefaultActor.cs" />
+    <Compile Include="DotCombineEnum.cs" />
+    <Compile Include="FightArena.cs" />
+    <Compile Include="FighterBlackBoxEvaluator.cs" />
+    <Compile Include="FighterExperiment.cs" />
+    <Compile Include="HighDamageWith7OnCooldown.cs" />
+    <Compile Include="IAbility.cs" />
+    <Compile Include="IAbilityExecutor.cs" />
+    <Compile Include="IActor.cs" />
+    <Compile Include="IStatus.cs" />
+    <Compile Include="IStatusesHolder.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusesHolder.cs" />
+    <Compile Include="SwitchAbility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComboView.resx">
+      <DependentUpon>ComboView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyFighterExperiment.experiments.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
